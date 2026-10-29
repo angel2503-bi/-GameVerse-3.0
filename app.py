@@ -9,7 +9,9 @@ from pymongo.errors import PyMongoError
 from bson import ObjectId
 from werkzeug.exceptions import HTTPException
 from werkzeug.security import generate_password_hash, check_password_hash
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY") or (secrets.token_hex(32) if not os.environ.get("RENDER") else "")
 if not app.secret_key:
