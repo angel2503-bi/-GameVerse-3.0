@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block contenido %}<section class="section narrow"><div class="eyebrow">GAME SHOP · ADMINISTRACIÓN</div><h1>Agregar videojuego</h1><p class="muted">Registra un título para mostrarlo en el catálogo y en la API REST.</p><div class="panel">{% set juego = none %}{% set accion = url_for('agregar') %}{% include '_form.html' %}</div></section>{% endblock %}

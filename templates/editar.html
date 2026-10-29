@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block contenido %}<section class="section narrow"><div class="eyebrow">GAME SHOP · ADMINISTRACIÓN</div><h1>Editar videojuego</h1><p class="muted">Actualiza los datos de {{juego.nombre}}.</p><div class="panel">{% set accion = url_for('editar',id=juego._id) %}{% include '_form.html' %}</div></section>{% endblock %}
